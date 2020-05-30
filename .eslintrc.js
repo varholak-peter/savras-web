@@ -6,4 +6,7 @@ module.exports = {
     'prettier',
     'prettier/react',
   ],
+  rules: {
+    '@typescript-eslint/consistent-type-definitions': 'off',
+  },
 }

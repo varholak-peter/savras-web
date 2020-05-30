@@ -1,7 +1,9 @@
 {
   "name": "savras-web",
   "version": "0.1.0",
+  "homepage": "https://varholak-peter.github.io/savras-web",
   "dependencies": {
+    "dayjs": "^1.8.28",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
@@ -15,7 +17,9 @@
     "dev": "react-scripts start",
     "format": "prettier --write '*/**/*.{ts,tsx,css,md,json}'",
     "lint:css": "stylelint '**/*.{ts,tsx}'",
-    "lint:ts": "eslint --ext .ts,.tsx src"
+    "lint:ts": "eslint --ext .ts,.tsx src",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@code-quality/commitlint-config": "^1.1.0",
@@ -37,6 +41,7 @@
     "eslint": "^7.1.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.20.2",
+    "gh-pages": "^3.0.0",
     "husky": "^4.2.5",
     "jest-styled-components": "^7.0.2",
     "lint-staged": "^10.2.7",

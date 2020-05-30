@@ -8,17 +8,19 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   html {
-    font-size: 62.5%;
+    font-family: sans-serif;
+    font-size: 125%;
     height: 100%;
   }
 
   body {
+    background-color: #42aaf4;
+    font-size: 0.8rem;
     height: 100%;
-    font-size: 1.6rem;
   }
 
   #root {
-    width: 100%;
     height: 100%;
+    width: 100%;
   }
 `
