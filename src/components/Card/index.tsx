@@ -12,12 +12,14 @@ export type CardData = {
   url: string
 }
 
-type Props = CardData
+type Props = CardData & {
+  onClose: React.ComponentProps<typeof S.Button>['onClick']
+}
 
 export const Card: FC<Props> = ({
   author,
   description,
-  id,
+  onClose,
   source,
   time,
   title,
@@ -29,7 +31,7 @@ export const Card: FC<Props> = ({
         <S.Title>{title}</S.Title>
         <S.Description>{description}</S.Description>
       </S.ContentLink>
-      <S.Button onClick={() => id} type="button">
+      <S.Button onClick={onClose} type="button">
         X
       </S.Button>
     </S.ContentWrap>
