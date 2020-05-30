@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "86d8df44fc0c5882220971b3552da4b1",
+    "revision": "8f3769f87150e9190f482910c0a61ee5",
     "url": "/savras-web/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/savras-web/static/js/2.7d9ef8ad.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c9e4b322c948db79112f",
-    "url": "/savras-web/static/js/main.56a53d5a.chunk.js"
+    "revision": "b9d317e6d010e7a8a083",
+    "url": "/savras-web/static/js/main.40b06cd3.chunk.js"
   },
   {
     "revision": "3e4bf4ca07d9c903179a",
