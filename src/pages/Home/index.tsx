@@ -34,7 +34,15 @@ export const HomePage = () => {
         {status
           ? status
           : data.map((card) => (
-              <Card key={card.id} {...card} onClose={() => markDone(card.id)} />
+              <Card
+                key={card.id}
+                {...card}
+                onClose={() => {
+                  const { id } = card
+                  markDone(id)
+                  setData(data.filter((entry) => entry.id !== id))
+                }}
+              />
             ))}
       </S.CardList>
     </>
