@@ -8,6 +8,7 @@ export type CardData = {
   id: string
   source: string
   time: string
+  timeRaw: string
   title: string
   url: string
 }
@@ -22,6 +23,7 @@ export const Card: FC<Props> = ({
   onClose,
   source,
   time,
+  timeRaw,
   title,
   url,
 }) => (
@@ -37,7 +39,7 @@ export const Card: FC<Props> = ({
     </S.ContentWrap>
     <hr />
     <S.Footer>
-      <S.Time>{time}</S.Time>
+      <S.Time dateTime={timeRaw}>{time}</S.Time>
       <S.Source>{source}</S.Source>
       <S.Author>{author}</S.Author>
     </S.Footer>

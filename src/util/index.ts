@@ -13,6 +13,7 @@ export const formatData = (data: DataRes[]): CardData[] =>
     id,
     source,
     time: dayjs(date).fromNow(true),
+    timeRaw: date,
     title,
     url,
   }))
