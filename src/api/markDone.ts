@@ -5,7 +5,7 @@ export const markDone = (id: string) => {
     throw new Error('REACT_APP_ENDPOINT must be present')
   }
 
-  fetch(`${endpoint}/${id}`, {
+  fetch(`${endpoint}/${encodeURIComponent(id)}`, {
     method: 'DELETE',
   }).catch((err) => {
     throw new Error(err)
