@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/savras-web/static/js/main.e3b8bb40.chunk.js",
-    "main.js.map": "/savras-web/static/js/main.e3b8bb40.chunk.js.map",
+    "main.js": "/savras-web/static/js/main.060885ea.chunk.js",
+    "main.js.map": "/savras-web/static/js/main.060885ea.chunk.js.map",
     "runtime-main.js": "/savras-web/static/js/runtime-main.2524472a.js",
     "runtime-main.js.map": "/savras-web/static/js/runtime-main.2524472a.js.map",
     "static/css/2.bb342caa.chunk.css": "/savras-web/static/css/2.bb342caa.chunk.css",
     "static/js/2.33e7f560.chunk.js": "/savras-web/static/js/2.33e7f560.chunk.js",
     "static/js/2.33e7f560.chunk.js.map": "/savras-web/static/js/2.33e7f560.chunk.js.map",
     "index.html": "/savras-web/index.html",
-    "precache-manifest.ee116924f17d54e216014bde84630568.js": "/savras-web/precache-manifest.ee116924f17d54e216014bde84630568.js",
+    "precache-manifest.28d519a59ced66102568ec513dc6cd12.js": "/savras-web/precache-manifest.28d519a59ced66102568ec513dc6cd12.js",
     "service-worker.js": "/savras-web/service-worker.js",
     "static/css/2.bb342caa.chunk.css.map": "/savras-web/static/css/2.bb342caa.chunk.css.map",
     "static/js/2.33e7f560.chunk.js.LICENSE.txt": "/savras-web/static/js/2.33e7f560.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.2524472a.js",
     "static/css/2.bb342caa.chunk.css",
     "static/js/2.33e7f560.chunk.js",
-    "static/js/main.e3b8bb40.chunk.js"
+    "static/js/main.060885ea.chunk.js"
   ]
 }
