@@ -21,6 +21,7 @@ export const Button = styled.button`
 
 export const ContentLink = styled.a`
   text-decoration: none;
+  width: 100%;
 `
 
 export const ContentWrap = styled.div`
@@ -70,7 +71,7 @@ export const Title = styled.strong`
   font-size: 0.9rem;
   line-height: 1.2;
   margin-bottom: 0.4rem;
-  max-width: calc(100% - 2rem);
+  max-width: calc(100% - 1.25rem);
   overflow: hidden;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
