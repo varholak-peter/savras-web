@@ -1,4 +1,6 @@
-import React, { FC } from 'react'
+import React, { ComponentProps, FC } from 'react'
+
+import { Archive, Close } from 'components/Icon'
 
 import * as S from './styled'
 
@@ -6,6 +8,8 @@ export type CardData = {
   author: string
   description: string
   id: string
+  isArchived: boolean
+  isCompleted: boolean
   source: string
   time: string
   timeRaw: string
@@ -14,12 +18,16 @@ export type CardData = {
 }
 
 type Props = CardData & {
-  onClose: React.ComponentProps<typeof S.Button>['onClick']
+  onArchive: ComponentProps<typeof S.Button>['onClick']
+  onClose: ComponentProps<typeof S.Button>['onClick']
 }
 
 export const Card: FC<Props> = ({
   author,
   description,
+  isArchived,
+  isCompleted,
+  onArchive,
   onClose,
   source,
   time,
@@ -33,9 +41,18 @@ export const Card: FC<Props> = ({
         <S.Title>{title}</S.Title>
         <S.Description>{description}</S.Description>
       </S.ContentLink>
-      <S.Button onClick={onClose} type="button">
-        X
-      </S.Button>
+      <S.Controls>
+        {isCompleted ? null : (
+          <S.Button onClick={onClose} type="button">
+            <Close />
+          </S.Button>
+        )}
+        {isArchived ? null : (
+          <S.Button onClick={onArchive} type="button">
+            <Archive />
+          </S.Button>
+        )}
+      </S.Controls>
     </S.ContentWrap>
     <hr />
     <S.Footer>

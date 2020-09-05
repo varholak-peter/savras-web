@@ -7,13 +7,27 @@ import { CardData } from 'components/Card'
 dayjs.extend(relativeTime)
 
 export const formatData = (data: DataRes[]): CardData[] =>
-  data.map(({ author, date, description, id, source, title, url }) => ({
-    author,
-    description,
-    id,
-    source,
-    time: dayjs(date).fromNow(true),
-    timeRaw: date,
-    title,
-    url,
-  }))
+  data.map(
+    ({
+      author,
+      date,
+      description,
+      id,
+      isArchived,
+      isCompleted,
+      source,
+      title,
+      url,
+    }) => ({
+      author,
+      description,
+      id,
+      isArchived,
+      isCompleted,
+      source,
+      time: dayjs(date).fromNow(true),
+      timeRaw: date,
+      title,
+      url,
+    })
+  )

@@ -8,5 +8,6 @@ module.exports = {
   ],
   rules: {
     '@typescript-eslint/consistent-type-definitions': 'off',
+    'absolute-import/no-relative-path': 'off',
   },
 }

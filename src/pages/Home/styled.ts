@@ -1,8 +1,31 @@
 import styled from 'styled-components'
 
+import { theme } from 'styles/theme'
+
+export const Controls = styled.span``
+
+export const ControlsButton = styled.button`
+  color: ${theme.color.text.light};
+`
+
+export const Header = styled.header`
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: ${theme.spacing(0, 3)};
+`
+
+export const StatusText = styled.strong`
+  color: ${theme.color.text.light};
+  display: inline-block;
+  font-size: 1rem;
+  margin-top: ${theme.spacing(8)};
+  text-align: center;
+`
+
 export const Title = styled.h1`
-  color: white;
-  margin: 0.25rem 0.75rem;
+  color: ${theme.color.text.light};
+  margin: 0;
 `
 
 export const TitleCapital = styled.span`
@@ -16,5 +39,9 @@ export const TitleRest = styled.span`
 `
 
 export const CardList = styled.div`
-  padding: 0 0.5rem;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  margin-top: ${theme.spacing(2)};
+  padding: ${theme.spacing(0, 2)};
 `
